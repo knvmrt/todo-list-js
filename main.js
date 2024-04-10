@@ -20,9 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
       li.setAttribute("ondragover", "allowDrop(event)");
       li.setAttribute("data-index", index); // Set the data-index attribute to track the index
       li.innerHTML = `
-        ${task}
-        <button onclick="editTask(${index})">Edit</button>
-        <button onclick="deleteTask(${index})">Delete</button>
+      
+        <table style="width:100%">
+  <tr>
+    <td >${task}</td>
+    <td style="width:7%;" >
+    <i class="fa-solid fa-pen-to-square" onclick="editTask(${index})"></i>
+    <i class="fa-solid fa-trash" onclick="deleteTask(${index})"></i>
+    </td>
+
+  </tr>
+
+</table>
       `;
       taskList.appendChild(li);
     });

@@ -6,7 +6,7 @@ body {
   }
   
   .container {
-    max-width: 600px;
+    max-width: 550px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #f75e5e;
@@ -19,9 +19,23 @@ body {
 
 #taskInput{
     height: 30px;
-    width: 480px;
+    width: 497px;
     font-size: 19px;
+    border-radius: 5px;
 }
+.search{
+position: relative;
+}
+
+.search #B-add{
+color: #f9f9f9;
+font-size: 25px;
+position: absolute;
+margin-left: 5px;
+padding: 5px 10px;
+background-color: #b90000;
+}
+
 
   ul {
     list-style-type: none;
